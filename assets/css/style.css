@@ -1,0 +1,321 @@
+
+
+/*=============================
+       Click TO Call CSS        
+===============================*/
+.ht-cta-box {
+  position: fixed;
+  right: 0;
+  left: auto;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  padding: 0 30px;
+  z-index: 9999;
+}
+
+.ht-cta-box--full-right {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ht-cta-box--full-right .ht-cta-content-box {
+  right: 20px;
+}
+
+.ht-cta-box--full-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ht-cta-box--full-center .ht-cta-content-box {
+  right: auto;
+  left: auto;
+}
+
+.ht-cta-box--full-center .ht-cta-button {
+  right: 0px;
+  bottom: 20px;
+}
+
+.ht-cta-box--full-left {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.ht-cta-box--full-left .ht-cta-content-box {
+  right: auto;
+  left: 20px;
+}
+
+.ht-cta-box--full-left .ht-cta-button {
+  right: 0px;
+  left: 10px;
+}
+
+.ht-cta-box--button-left {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.ht-cta-box--button-left .ht-cta-button {
+  right: 0px;
+  left: 10px;
+}
+
+.ht-cta-box--button-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ht-cta-box--button-center .ht-cta-button {
+  right: 0px;
+  left: 0px;
+}
+
+.ht-cta-box--button-right {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ht-cta-box--button-right .ht-cta-button {
+  right: 20px;
+}
+
+.ht-cta-box--button-right {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ht-cta-box--button-right .ht-cta-button {
+  right: 20px;
+}
+
+.ht-cta-box--content-left .ht-cta-content-box {
+  right: auto;
+  left: 20px;
+}
+
+.ht-cta-box--content-right .ht-cta-content-box {
+  right: 20px;
+  left: auto;
+}
+
+.ht-cta-content-box {
+  min-width: 370px;
+  padding: 35px 20px;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0;
+  bottom: 0;
+  background: #F8F8FE;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 90px;
+  z-index: 999;
+  margin-left: auto;
+  right: 20px;
+  left: auto;
+}
+
+.ht-cta-content-box::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  background: url(../images/icons/mask-01.png) -30px -22px;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.ht-cta-content-box.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 0px;
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+.ht-cta-content-box .title {
+  color: #7B7B7B;
+  font-weight: 600;
+  font-family: "Titillium Web", sans-serif;
+  margin:0px 0px 10px 0px;
+  font-size: 28px;
+}
+.ht-cta-content-box img{
+  display: inline-block;
+  vertical-align: middle;
+}
+.ht-cta-content-box a{
+  text-decoration: none;
+}
+.ht-cta-content-box a.ht-simple-call{
+  background: #FFFFFF;
+  border-radius: 35px;
+  font-family: "Titillium Web", sans-serif;
+  padding: 6px 25px;
+  color: #1A338E;
+  font-size: 28px;
+}
+
+.ht-cta-content-box .select-country {
+  background: #fff;
+  border-radius: 35px;
+  padding: 12px 25px 12px 10px;
+  color: #fff;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.ht-cta-content-box .select-country a {
+  margin:0px 0px 0px 5px;
+  color: #1A338E;
+  font-size: 16px;
+}
+
+.ht-cta-content-box .select-country .cuntry-code {
+  margin-left: 8px;
+  color: #1A338E;
+}
+
+.ht-cta-content-box .select-country .select-item {
+  border: none;
+  font-size: 16px;
+  background: #202A60;
+  color: #fff;
+}
+
+.ht-cta-content-box .author-image {
+  margin-bottom: 10px;
+}
+.ht-cta-content-box .author-image img{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.ht-cta-content-box .flag-image img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.ht-cta-content-box .name {
+  color: #333;
+  font-weight: 700;
+  margin-top: 5px;
+  font-family: "Titillium Web", sans-serif;
+  margin-bottom: 5px;
+  font-size: 28px;
+}
+
+.ht-cta-content-box p {
+  font-size: 18px;
+  font-family: "Titillium Web", sans-serif;
+  color: #000;
+}
+
+.ht-cta-content-box .ht-cta-message {
+  font-size: 15px;
+  text-transform: uppercase;
+  max-width: 350px;
+  margin: 0px 0px 16px 0px;
+  color: #000;
+}
+
+.ht-cta-button {
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  right: 20px;
+  bottom: 20px;
+}
+
+.ht-cta-button .button-box {
+  width: 100%;
+  background: #0A3ACA;
+  height: 60px;
+  padding: 0 12px;
+  min-width: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.ht-cta-button .button-box .ht-button-text {
+  color: #ffffff;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.ht-cta-button img{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ht-cta-button .images-one {
+  display: block;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.ht-cta-button .images-one img {
+  width: 28px;
+}
+
+.ht-cta-button .images-two {
+  display: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.ht-cta-button .open .images-one {
+  display: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.ht-cta-button .open .images-two {
+  display: block;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/*=====  End of Header  ======*/
