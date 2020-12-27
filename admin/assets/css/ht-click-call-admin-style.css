@@ -49,6 +49,41 @@
   -ms-transform: translateX(27px);
   transform: translateX(27px);
 }
+.img-container td{
+  position: relative;
+}
+.wpsa-remove{
+  position: absolute;
+  top: 9px;
+  left: 86px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.htmedia_display img {
+  margin-bottom: 5px;
+}
+
+.ht-click-call-person-info td .htmedia_display img {
+  width: 70px;
+  height: 70px;
+}
+
+.ht-click-call-icon td .htmedia_display img {
+  width: 34px;
+  height: 34px;
+}
+
+.ht-click-call-number-icon td .htmedia_display img {
+  width: 15px;
+  height: 15px;
+}
+
+.ht-click-call-flag-info td .htmedia_display img {
+  width: 45px;
+  height: 45px;
+}
 
 .quater-text{
   width: 80px;

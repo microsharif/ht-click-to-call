@@ -397,9 +397,10 @@ class ClickCall_Settings_API {
         $size  = isset( $args['size'] ) && !is_null( $args['size'] ) ? $args['size'] : 'regular';
         $id    = $args['section']  . '[' . $args['id'] . ']';
         $label = isset( $args['options']['button_label'] ) ? $args['options']['button_label'] : __( 'Choose File' );
-
-        $html  = sprintf( '<input type="text" class="%1$s-text wpsa-url" id="%2$s[%3$s]" name="%2$s[%3$s]" value="%4$s"/>', $size, $args['section'], $args['id'], $value );
+        $html  =sprintf('<div class="htmedia_display"><img src="%1$s" alt="%2$s"/></div>',$value,$args['name']);
+        $html  .= sprintf( '<input type="hidden" class="%1$s-text wpsa-url" id="%2$s[%3$s]" name="%2$s[%3$s]" value="%4$s"/>', $size, $args['section'], $args['id'], $value );
         $html  .= '<input type="button" class="button wpsa-browse" value="' . $label . '" />';
+        $html  .= '<span class="wpsa-remove">x</span>';
         $html  .= $this->get_field_description( $args );
 
         echo $html;
@@ -658,10 +659,20 @@ class ClickCall_Settings_API {
                     file_frame.on('select', function () {
                         attachment = file_frame.state().get('selection').first().toJSON();
                         self.prev('.wpsa-url').val(attachment.url).change();
+                        self.siblings('.htmedia_display').html('<img src="'+attachment.url+'" alt="" />');
+                        self.siblings('.wpsa-remove').show();
                     });
 
                     // Finally, open the modal
                     file_frame.open();
+                });
+
+                $('.wpsa-remove').on('click', function (event) {
+                    event.preventDefault();
+                    var self = $(this);
+                    self.siblings('.wpsa-url').val('').change();
+                    self.siblings('.htmedia_display').html('');
+                    self.hide();
                 });
         });
         </script>

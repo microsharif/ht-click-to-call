@@ -82,6 +82,7 @@
 	                    'label'   => __( 'Person Information Enable', 'ht-click-call' ),
 	                    'type'    => 'checkbox',
 	                    'default' => 'off',
+	                    'class'	  =>'person-info-enable',
 	                ),
 
 	                array(
@@ -89,6 +90,7 @@
 	                    'label'   => __( 'Country Flag Image Enable', 'ht-click-call' ),
 	                    'type'    => 'checkbox',
 	                    'default' => 'off',
+	                    'class'	  =>'flag-info-enable',
 	                ),
 
 	                array(
@@ -96,6 +98,7 @@
 	                    'label'   => __( 'Call Now Title Enable', 'ht-click-call' ),
 	                    'type'    => 'checkbox',
 	                    'default' => 'on',
+	                    'class'	  =>'call-title-enable',
 	                ),
 
 	                array(
@@ -103,6 +106,7 @@
 	                    'label'   => __( 'Call Now Message Enable', 'ht-click-call' ),
 	                    'type'    => 'checkbox',
 	                    'default' => 'off',
+	                    'class'	  =>'call-message-enable',
 	                ),
 
 	                array(
@@ -110,6 +114,7 @@
 	                    'label'   => __( 'Call Number Icon Enable', 'ht-click-call' ),
 	                    'type'    => 'checkbox',
 	                    'default' => 'off',
+	                    'class'	  =>'call-number-icon-enable',
 	                ),
 
 	    			array(
@@ -137,6 +142,7 @@
 	                    'default' => 'Jonathon doe',
 	                    'type'    => 'text',
 	                    'sanitize_callback' => 'sanitize_text_field',
+	                    'class'	  =>'ht-click-call-person-info',
 	                ),
 
 	                array(
@@ -146,6 +152,7 @@
 	                    'default' => 'Customer service manager',
 	                    'type'    => 'text',
 	                    'sanitize_callback' => 'sanitize_text_field',
+	                    'class'	  =>'ht-click-call-person-info',
 	                ),
 
 	                array(
@@ -155,6 +162,7 @@
 	                    'type'    => 'text',
 	                    'default' => 'Call Us',
 	                    'sanitize_callback' => 'sanitize_text_field',
+	                    'class'	  =>'ht-click-call-title',
 	                ),
 
 	                array(
@@ -164,6 +172,7 @@
 	                    'type'    => 'textarea',
 	                    'default' => 'HEY THERE. ❤️ NEED HELP? I\' M HERE FOR YOU, SO JUST GIVE ME A CALL',
 	                    'sanitize_callback' => 'sanitize_text_field',
+	                    'class'	  =>'ht-click-call-message',
 	                ),
 
 	                array(
@@ -172,6 +181,7 @@
 	                    'desc'    => __( 'Give person image who recive the call from user', 'ht-click-call' ),
 	                    'default' => CLICK_CALL_PL_URL. 'assets/images/author/author-1.png',
 	                    'type'    => 'file',
+	                    'class'	  =>'ht-click-call-person-info img-container',
 	                ),
 
 	                array(
@@ -180,6 +190,7 @@
 	                    'desc'    => __( 'Add a call icon here', 'ht-click-call' ),
 	                    'default' => CLICK_CALL_PL_URL. 'assets/images/icons/white-call-icon.png',
 	                    'type'    => 'file',
+	                    'class'	  =>'ht-click-call-icon img-container',
 	                ),
 
 	                array(
@@ -188,6 +199,7 @@
 	                    'desc'    => __( 'Add a call icon in calling number left side', 'ht-click-call' ),
 	                    'default' => CLICK_CALL_PL_URL. 'assets/images/icons/icon-call.png',
 	                    'type'    => 'file',
+	                    'class'	  =>'ht-click-call-number-icon img-container',
 	                ),
 
 	                array(
@@ -196,6 +208,7 @@
 	                    'desc'    => __( 'Give country flag image', 'ht-click-call' ),
 	                    'default' => CLICK_CALL_PL_URL. 'assets/images/icons/flag-1.png',
 	                    'type'    => 'file',
+	                    'class'	  =>'ht-click-call-flag-info img-container',
 	                ),
 
 	    		),

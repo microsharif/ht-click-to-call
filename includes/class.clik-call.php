@@ -14,7 +14,7 @@
 
 	    /**
 	     * [instance] Initializes a singleton instance
-	     * @return [HTMega_Addons_Elementor]
+	     * @return [Click_Call]
 	    */
 	    public static function instance() {
 	        if ( is_null( self::$_instance ) ) {
