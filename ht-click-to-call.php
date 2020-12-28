@@ -17,7 +17,7 @@ define( 'CLICK_CALL_PL_PATH', plugin_dir_path( CLICK_CALL_PL_ROOT ) );
 define( 'CLICK_CALL_PLUGIN_BASE', plugin_basename( CLICK_CALL_PL_ROOT ) );
 
 // Options value fetch
-function clickcall_get_option( $option, $section, $default = '' ) {
+function ht_clickcall_get_option( $option, $section, $default = '' ) {
     $options = get_option( $section );
     if ( isset( $options[$option] ) ) {
         return $options[$option];

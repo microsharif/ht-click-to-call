@@ -13,7 +13,7 @@
                     if($person_info_enabel == 'on'): ?>
                         <?php if($click_call_prsn_img): ?>
                             <div class="author-image">
-                                <img src="<?php echo esc_url($click_call_prsn_img); ?>" alt="">
+                                <img src="<?php echo esc_url($click_call_prsn_img); ?>" alt="person image">
                             </div>
                         <?php endif; ?>
 
@@ -42,14 +42,14 @@
 
                             <?php if($flag_image_enable == 'on' && $click_call_flag_img): ?>
                                 <span class="flag-image">
-                                    <img src="<?php echo esc_url($click_call_flag_img);?>" alt="">
+                                    <img src="<?php echo esc_url($click_call_flag_img);?>" alt="Country Flag Image">
                                 </span>
                             <?php endif; ?>
 
                             <span class="cuntry-code"><?php 
                                 if($call_num_icon_enabel == 'on'):
                                     if($call_num_icon_img): ?>
-                                        <img src="<?php echo esc_url($call_num_icon_img);?>" alt="">
+                                        <img src="<?php echo esc_url($call_num_icon_img);?>" alt="Add Call Number Icon">
                                     <?php endif; 
                                 endif;
                                 echo esc_html__($click_call_cty_code,'ht-click-call'); ?>
@@ -72,10 +72,10 @@
                             <?php
                                 $click_call_icon_btn = $click_call_icon ? $click_call_icon : CLICK_CALL_PL_URL. 'assets/images/icons/white-call-icon.png';
                             ?>
-                            <img src="<?php echo esc_url($click_call_icon_btn); ?>" class="img-fluid " alt="">
+                            <img src="<?php echo esc_url($click_call_icon_btn); ?>" class="img-fluid " alt="Add Click Call Button Icon">
                         </div>
                         <div class="images-two">
-                            <img src="<?php echo esc_url(CLICK_CALL_PL_URL. 'assets/images/icons/white-call-close.png'); ?>" class="img-fluid" alt="">
+                            <img src="<?php echo esc_url(CLICK_CALL_PL_URL. 'assets/images/icons/white-call-close.png'); ?>" class="img-fluid" alt="click call close">
                         </div>
                     </div>
                 </a>
